@@ -1,4 +1,19 @@
 /.vagrant
-/CIS_AlmaLinux9_Project_Documentation.docx
-/Tekstsjabloon-A4_2024-02-09_voorbeeld.docx
-/alma9-cis.box
+
+# Large binary artifacts — never commit these
+*.iso
+*.box
+*.ova
+*.vmdk
+
+# Reports (generated output)
+reports/*.html
+reports/*.xml
+reports/*.log
+
+# Packer cache and build output
+packer/packer_cache/
+packer/output-*/
+
+# Word docs
+*.docx
