@@ -1,0 +1,766 @@
+Remediating rule 1/395: 'xccdf_org.ssgproject.content_rule_package_aide_installed'
+Remediating rule 2/395: 'xccdf_org.ssgproject.content_rule_aide_build_database'
+Start timestamp: 2026-03-22 13:49:02 +0000 (AIDE 0.16)
+AIDE initialized database at /var/lib/aide/aide.db.new.gz
+
+Number of entries:	64108
+
+---------------------------------------------------
+The attributes of the (uncompressed) database(s):
+---------------------------------------------------
+
+/var/lib/aide/aide.db.new.gz
+  MD5      : RNJoqOmcFaozx1f+U6bGng==
+  SHA1     : /47c4CE7wAwyHvKT/hprO7Vv4o8=
+  RMD160   : 77zr4FeDSbrRjsypkhYLuvEQfBU=
+  TIGER    : qX+RLbajujq0tDn1My3Phvnppz5s26kS
+  SHA256   : sP27zWEwX8lB/ELaRdsCxfo0P+TQB//3
+             Dcz0V8eGm0E=
+  SHA512   : WxJyKhiEpPFNltrAy7XddV9QpCgR4KRr
+             0JsvsB4QeNkuJgTbdcWlf5BiojeGWnBz
+             WwJA6FVQl/+jdjmqSAI/6g==
+
+
+End timestamp: 2026-03-22 13:49:33 +0000 (run time: 0m 31s)
+Remediating rule 3/395: 'xccdf_org.ssgproject.content_rule_aide_check_audit_tools'
+Remediating rule 4/395: 'xccdf_org.ssgproject.content_rule_aide_periodic_cron_checking'
+Remediating rule 5/395: 'xccdf_org.ssgproject.content_rule_configure_custom_crypto_policy_cis'
+Setting system policy to DEFAULT:NO-SHA1:NO-SSHCBC
+Note: System-wide crypto policies are applied on application start-up.
+It is recommended to restart the system for the change of policies
+to fully take place.
+Remediating rule 6/395: 'xccdf_org.ssgproject.content_rule_configure_ssh_crypto_policy'
+Remediating rule 7/395: 'xccdf_org.ssgproject.content_rule_partition_for_dev_shm'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_partition_for_dev_shm' IS MISSING!
+Remediating rule 8/395: 'xccdf_org.ssgproject.content_rule_partition_for_home'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_partition_for_home' IS MISSING!
+Remediating rule 9/395: 'xccdf_org.ssgproject.content_rule_partition_for_tmp'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_partition_for_tmp' IS MISSING!
+Remediating rule 10/395: 'xccdf_org.ssgproject.content_rule_partition_for_var'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_partition_for_var' IS MISSING!
+Remediating rule 11/395: 'xccdf_org.ssgproject.content_rule_partition_for_var_log'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_partition_for_var_log' IS MISSING!
+Remediating rule 12/395: 'xccdf_org.ssgproject.content_rule_partition_for_var_log_audit'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_partition_for_var_log_audit' IS MISSING!
+Remediating rule 13/395: 'xccdf_org.ssgproject.content_rule_partition_for_var_tmp'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_partition_for_var_tmp' IS MISSING!
+Remediating rule 14/395: 'xccdf_org.ssgproject.content_rule_package_gdm_removed'
+Remediation is not applicable, nothing was done
+Remediating rule 15/395: 'xccdf_org.ssgproject.content_rule_dconf_db_up_to_date'
+Remediation is not applicable, nothing was done
+Remediating rule 16/395: 'xccdf_org.ssgproject.content_rule_dconf_gnome_disable_user_list'
+Remediation is not applicable, nothing was done
+Remediating rule 17/395: 'xccdf_org.ssgproject.content_rule_gnome_gdm_disable_xdmcp'
+Remediation is not applicable, nothing was done
+Remediating rule 18/395: 'xccdf_org.ssgproject.content_rule_dconf_gnome_disable_automount'
+Remediation is not applicable, nothing was done
+Remediating rule 19/395: 'xccdf_org.ssgproject.content_rule_dconf_gnome_disable_automount_open'
+Remediation is not applicable, nothing was done
+Remediating rule 20/395: 'xccdf_org.ssgproject.content_rule_dconf_gnome_disable_autorun'
+Remediation is not applicable, nothing was done
+Remediating rule 21/395: 'xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_idle_delay'
+Remediation is not applicable, nothing was done
+Remediating rule 22/395: 'xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_lock_delay'
+Remediation is not applicable, nothing was done
+Remediating rule 23/395: 'xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_user_locks'
+Remediation is not applicable, nothing was done
+Remediating rule 24/395: 'xccdf_org.ssgproject.content_rule_dconf_gnome_session_idle_user_locks'
+Remediation is not applicable, nothing was done
+Remediating rule 25/395: 'xccdf_org.ssgproject.content_rule_package_sudo_installed'
+Remediating rule 26/395: 'xccdf_org.ssgproject.content_rule_sudo_add_use_pty'
+Remediating rule 27/395: 'xccdf_org.ssgproject.content_rule_sudo_custom_logfile'
+Remediating rule 28/395: 'xccdf_org.ssgproject.content_rule_sudo_require_authentication'
+Remediating rule 29/395: 'xccdf_org.ssgproject.content_rule_sudo_require_reauthentication'
+Remediating rule 30/395: 'xccdf_org.ssgproject.content_rule_ensure_gpgcheck_globally_activated'
+Remediating rule 31/395: 'xccdf_org.ssgproject.content_rule_ensure_gpgcheck_never_disabled'
+Remediating rule 32/395: 'xccdf_org.ssgproject.content_rule_enable_authselect'
+No existing configuration detected.
+[error] File [/etc/pam.d/system-auth] exists but it needs to be overwritten!
+[error] File [/etc/pam.d/password-auth] exists but it needs to be overwritten!
+[error] File [/etc/pam.d/fingerprint-auth] exists but it needs to be overwritten!
+[error] File [/etc/pam.d/smartcard-auth] exists but it needs to be overwritten!
+[error] File [/etc/pam.d/postlogin] exists but it needs to be overwritten!
+[error] File [/etc/nsswitch.conf] exists but it needs to be overwritten!
+[error] File that needs to be overwritten was found
+[error] Refusing to activate profile unless this file is removed or overwrite is requested.
+
+Some unexpected changes to the configuration were detected.
+Use --force parameter if you want to overwrite these changes.
+authselect is not used but files from the 'pam' package have been altered, so the authselect configuration won't be forced.
+Remediating rule 33/395: 'xccdf_org.ssgproject.content_rule_banner_etc_issue_cis'
+Remediating rule 34/395: 'xccdf_org.ssgproject.content_rule_banner_etc_issue_net_cis'
+Remediating rule 35/395: 'xccdf_org.ssgproject.content_rule_banner_etc_motd_cis'
+Remediating rule 36/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_etc_issue'
+Remediating rule 37/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_etc_issue_net'
+Remediating rule 38/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_etc_motd'
+Remediating rule 39/395: 'xccdf_org.ssgproject.content_rule_file_owner_etc_issue'
+Remediating rule 40/395: 'xccdf_org.ssgproject.content_rule_file_owner_etc_issue_net'
+Remediating rule 41/395: 'xccdf_org.ssgproject.content_rule_file_owner_etc_motd'
+Remediating rule 42/395: 'xccdf_org.ssgproject.content_rule_file_permissions_etc_issue'
+Remediating rule 43/395: 'xccdf_org.ssgproject.content_rule_file_permissions_etc_issue_net'
+Remediating rule 44/395: 'xccdf_org.ssgproject.content_rule_file_permissions_etc_motd'
+Remediating rule 45/395: 'xccdf_org.ssgproject.content_rule_dconf_gnome_banner_enabled'
+Remediation is not applicable, nothing was done
+Remediating rule 46/395: 'xccdf_org.ssgproject.content_rule_dconf_gnome_login_banner_text'
+Remediation is not applicable, nothing was done
+Remediating rule 47/395: 'xccdf_org.ssgproject.content_rule_package_pam_pwquality_installed'
+Remediating rule 48/395: 'xccdf_org.ssgproject.content_rule_account_password_pam_faillock_password_auth'
+System was not configured with authselect.
+
+authselect integrity check failed. Remediation aborted!
+This remediation could not be applied because an authselect profile was not selected or the selected profile is not intact.
+It is not recommended to manually edit the PAM files when authselect tool is available.
+In cases where the default authselect profile does not cover a specific demand, a custom authselect profile is recommended.
+Remediating rule 49/395: 'xccdf_org.ssgproject.content_rule_account_password_pam_faillock_system_auth'
+System was not configured with authselect.
+
+authselect integrity check failed. Remediation aborted!
+This remediation could not be applied because an authselect profile was not selected or the selected profile is not intact.
+It is not recommended to manually edit the PAM files when authselect tool is available.
+In cases where the default authselect profile does not cover a specific demand, a custom authselect profile is recommended.
+Remediating rule 50/395: 'xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_remember_password_auth'
+System was not configured with authselect.
+
+        authselect integrity check failed. Remediation aborted!
+        This remediation could not be applied because an authselect profile was not selected or the selected profile is not intact.
+        It is not recommended to manually edit the PAM files when authselect tool is available.
+        In cases where the default authselect profile does not cover a specific demand, a custom authselect profile is recommended.
+Remediating rule 51/395: 'xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_remember_system_auth'
+System was not configured with authselect.
+
+        authselect integrity check failed. Remediation aborted!
+        This remediation could not be applied because an authselect profile was not selected or the selected profile is not intact.
+        It is not recommended to manually edit the PAM files when authselect tool is available.
+        In cases where the default authselect profile does not cover a specific demand, a custom authselect profile is recommended.
+Remediating rule 52/395: 'xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_deny'
+System was not configured with authselect.
+
+authselect integrity check failed. Remediation aborted!
+This remediation could not be applied because an authselect profile was not selected or the selected profile is not intact.
+It is not recommended to manually edit the PAM files when authselect tool is available.
+In cases where the default authselect profile does not cover a specific demand, a custom authselect profile is recommended.
+Remediating rule 53/395: 'xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_deny_root'
+System was not configured with authselect.
+
+authselect integrity check failed. Remediation aborted!
+This remediation could not be applied because an authselect profile was not selected or the selected profile is not intact.
+It is not recommended to manually edit the PAM files when authselect tool is available.
+In cases where the default authselect profile does not cover a specific demand, a custom authselect profile is recommended.
+Remediating rule 54/395: 'xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_unlock_time'
+System was not configured with authselect.
+
+authselect integrity check failed. Remediation aborted!
+This remediation could not be applied because an authselect profile was not selected or the selected profile is not intact.
+It is not recommended to manually edit the PAM files when authselect tool is available.
+In cases where the default authselect profile does not cover a specific demand, a custom authselect profile is recommended.
+Remediating rule 55/395: 'xccdf_org.ssgproject.content_rule_accounts_password_pam_dictcheck'
+Remediating rule 56/395: 'xccdf_org.ssgproject.content_rule_accounts_password_pam_difok'
+Remediating rule 57/395: 'xccdf_org.ssgproject.content_rule_accounts_password_pam_enforce_root'
+Remediating rule 58/395: 'xccdf_org.ssgproject.content_rule_accounts_password_pam_maxrepeat'
+Remediating rule 59/395: 'xccdf_org.ssgproject.content_rule_accounts_password_pam_maxsequence'
+Remediating rule 60/395: 'xccdf_org.ssgproject.content_rule_accounts_password_pam_minclass'
+Remediating rule 61/395: 'xccdf_org.ssgproject.content_rule_accounts_password_pam_minlen'
+Remediating rule 62/395: 'xccdf_org.ssgproject.content_rule_set_password_hashing_algorithm_libuserconf'
+Remediating rule 63/395: 'xccdf_org.ssgproject.content_rule_set_password_hashing_algorithm_logindefs'
+Remediating rule 64/395: 'xccdf_org.ssgproject.content_rule_set_password_hashing_algorithm_passwordauth'
+System was not configured with authselect.
+
+        authselect integrity check failed. Remediation aborted!
+        This remediation could not be applied because an authselect profile was not selected or the selected profile is not intact.
+        It is not recommended to manually edit the PAM files when authselect tool is available.
+        In cases where the default authselect profile does not cover a specific demand, a custom authselect profile is recommended.
+Remediating rule 65/395: 'xccdf_org.ssgproject.content_rule_set_password_hashing_algorithm_systemauth'
+System was not configured with authselect.
+
+        authselect integrity check failed. Remediation aborted!
+        This remediation could not be applied because an authselect profile was not selected or the selected profile is not intact.
+        It is not recommended to manually edit the PAM files when authselect tool is available.
+        In cases where the default authselect profile does not cover a specific demand, a custom authselect profile is recommended.
+Remediating rule 66/395: 'xccdf_org.ssgproject.content_rule_account_unique_id'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_account_unique_id' IS MISSING!
+Remediating rule 67/395: 'xccdf_org.ssgproject.content_rule_group_unique_id'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_group_unique_id' IS MISSING!
+Remediating rule 68/395: 'xccdf_org.ssgproject.content_rule_account_disable_post_pw_expiration'
+Remediating rule 69/395: 'xccdf_org.ssgproject.content_rule_account_unique_name'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_account_unique_name' IS MISSING!
+Remediating rule 70/395: 'xccdf_org.ssgproject.content_rule_accounts_maximum_age_login_defs'
+Remediating rule 71/395: 'xccdf_org.ssgproject.content_rule_accounts_minimum_age_login_defs'
+Remediating rule 72/395: 'xccdf_org.ssgproject.content_rule_accounts_password_set_max_life_existing'
+Remediating rule 73/395: 'xccdf_org.ssgproject.content_rule_accounts_password_set_min_life_existing'
+Remediating rule 74/395: 'xccdf_org.ssgproject.content_rule_accounts_password_set_warn_age_existing'
+Remediating rule 75/395: 'xccdf_org.ssgproject.content_rule_accounts_password_warn_age_login_defs'
+Remediating rule 76/395: 'xccdf_org.ssgproject.content_rule_accounts_set_post_pw_existing'
+Remediating rule 77/395: 'xccdf_org.ssgproject.content_rule_accounts_password_all_shadowed'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_accounts_password_all_shadowed' IS MISSING!
+Remediating rule 78/395: 'xccdf_org.ssgproject.content_rule_accounts_password_last_change_is_in_past'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_accounts_password_last_change_is_in_past' IS MISSING!
+Remediating rule 79/395: 'xccdf_org.ssgproject.content_rule_gid_passwd_group_same'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_gid_passwd_group_same' IS MISSING!
+Remediating rule 80/395: 'xccdf_org.ssgproject.content_rule_no_empty_passwords'
+System was not configured with authselect.
+
+authselect integrity check failed. Remediation aborted!
+This remediation could not be applied because an authselect profile was not selected or the selected profile is not intact.
+It is not recommended to manually edit the PAM files when authselect tool is available.
+In cases where the default authselect profile does not cover a specific demand, a custom authselect profile is recommended.
+Remediating rule 81/395: 'xccdf_org.ssgproject.content_rule_no_empty_passwords_etc_shadow'
+sudo: Password expired, contact your system administrator
+sudo: a password is required
+Remediating rule 82/395: 'xccdf_org.ssgproject.content_rule_no_forward_files'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_no_forward_files' IS MISSING!
+Remediating rule 83/395: 'xccdf_org.ssgproject.content_rule_no_netrc_files'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_no_netrc_files' IS MISSING!
+Remediating rule 84/395: 'xccdf_org.ssgproject.content_rule_accounts_no_uid_except_zero'
+Remediating rule 85/395: 'xccdf_org.ssgproject.content_rule_accounts_root_gid_zero'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_accounts_root_gid_zero' IS MISSING!
+Remediating rule 86/395: 'xccdf_org.ssgproject.content_rule_ensure_pam_wheel_group_empty'
+Remediating rule 87/395: 'xccdf_org.ssgproject.content_rule_ensure_root_password_configured'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_ensure_root_password_configured' IS MISSING!
+Remediating rule 88/395: 'xccdf_org.ssgproject.content_rule_groups_no_zero_gid_except_root'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_groups_no_zero_gid_except_root' IS MISSING!
+Remediating rule 89/395: 'xccdf_org.ssgproject.content_rule_no_password_auth_for_systemaccounts'
+Remediating rule 90/395: 'xccdf_org.ssgproject.content_rule_no_shelllogin_for_systemaccounts'
+awk: cmd. line:2: warning: escape sequence `\/' treated as plain `/'
+usermod: no changes
+usermod: no changes
+usermod: no changes
+usermod: no changes
+usermod: no changes
+usermod: no changes
+usermod: no changes
+usermod: no changes
+usermod: no changes
+usermod: no changes
+usermod: no changes
+usermod: no changes
+usermod: no changes
+usermod: no changes
+usermod: no changes
+Remediating rule 91/395: 'xccdf_org.ssgproject.content_rule_use_pam_wheel_group_for_su'
+Remediating rule 92/395: 'xccdf_org.ssgproject.content_rule_accounts_tmout'
+Remediating rule 93/395: 'xccdf_org.ssgproject.content_rule_accounts_user_dot_group_ownership'
+Remediating rule 94/395: 'xccdf_org.ssgproject.content_rule_accounts_user_dot_no_world_writable_programs'
+Remediating rule 95/395: 'xccdf_org.ssgproject.content_rule_accounts_user_dot_user_ownership'
+Remediating rule 96/395: 'xccdf_org.ssgproject.content_rule_accounts_user_interactive_home_directory_exists'
+Remediating rule 97/395: 'xccdf_org.ssgproject.content_rule_file_permission_user_init_files'
+Remediating rule 98/395: 'xccdf_org.ssgproject.content_rule_file_permissions_home_directories'
+Remediating rule 99/395: 'xccdf_org.ssgproject.content_rule_accounts_root_path_dirs_no_write'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_accounts_root_path_dirs_no_write' IS MISSING!
+Remediating rule 100/395: 'xccdf_org.ssgproject.content_rule_no_dirs_unowned_by_root'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_no_dirs_unowned_by_root' IS MISSING!
+Remediating rule 101/395: 'xccdf_org.ssgproject.content_rule_root_path_all_dirs'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_root_path_all_dirs' IS MISSING!
+Remediating rule 102/395: 'xccdf_org.ssgproject.content_rule_root_path_no_dot'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_root_path_no_dot' IS MISSING!
+Remediating rule 103/395: 'xccdf_org.ssgproject.content_rule_accounts_umask_etc_bashrc'
+Remediating rule 104/395: 'xccdf_org.ssgproject.content_rule_accounts_umask_etc_login_defs'
+Remediating rule 105/395: 'xccdf_org.ssgproject.content_rule_accounts_umask_etc_profile'
+Remediating rule 106/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_grub2_cfg'
+Remediating rule 107/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_user_cfg'
+stat: cannot statx '/boot/grub2/user.cfg': No such file or directory
+chgrp: cannot access '/boot/grub2/user.cfg': No such file or directory
+Remediating rule 108/395: 'xccdf_org.ssgproject.content_rule_file_owner_grub2_cfg'
+Remediating rule 109/395: 'xccdf_org.ssgproject.content_rule_file_owner_user_cfg'
+stat: cannot statx '/boot/grub2/user.cfg': No such file or directory
+chown: cannot access '/boot/grub2/user.cfg': No such file or directory
+Remediating rule 110/395: 'xccdf_org.ssgproject.content_rule_file_permissions_grub2_cfg'
+Remediating rule 111/395: 'xccdf_org.ssgproject.content_rule_file_permissions_user_cfg'
+chmod: cannot access '/boot/grub2/user.cfg': No such file or directory
+Remediating rule 112/395: 'xccdf_org.ssgproject.content_rule_grub2_password'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_grub2_password' IS MISSING!
+Remediating rule 113/395: 'xccdf_org.ssgproject.content_rule_rsyslog_files_groupownership'
+Invalid include object: /etc/rsyslog.d/*.conf
+chgrp: cannot access '/var/log/boot.log': No such file or directory
+Remediating rule 114/395: 'xccdf_org.ssgproject.content_rule_rsyslog_files_ownership'
+Invalid include object: /etc/rsyslog.d/*.conf
+chown: cannot access '/var/log/boot.log': No such file or directory
+Remediating rule 115/395: 'xccdf_org.ssgproject.content_rule_rsyslog_files_permissions'
+Invalid include object: /etc/rsyslog.d/*.conf
+chmod: cannot access '/var/log/boot.log': No such file or directory
+Remediating rule 116/395: 'xccdf_org.ssgproject.content_rule_package_systemd-journal-remote_installed'
+AlmaLinux 9 - AppStream                         6.8 kB/s | 4.2 kB     00:00    
+AlmaLinux 9 - BaseOS                            5.9 kB/s | 3.8 kB     00:00    
+AlmaLinux 9 - Extras                            5.2 kB/s | 3.3 kB     00:00    
+Extra Packages for Enterprise Linux 9 - x86_64   49 kB/s |  35 kB     00:00    
+Extra Packages for Enterprise Linux 9 - x86_64  8.4 MB/s |  20 MB     00:02    
+Extra Packages for Enterprise Linux 9 openh264  560 kB/s | 1.6 kB     00:00    
+Importing GPG key 0x3228467C:
+ Userid     : "Fedora (epel9) <epel@fedoraproject.org>"
+ Fingerprint: FF8A D134 4597 106E CE81 3B91 8A38 72BF 3228 467C
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-9
+Extra Packages for Enterprise Linux 9 openh264  313  B/s | 311  B     00:00    
+Extra Packages for Enterprise Linux 9 openh264  1.6 MB/s | 1.6 kB     00:00    
+Extra Packages for Enterprise Linux 9 openh264  550  B/s | 311  B     00:00    
+Errors during downloading metadata for repository 'epel-cisco-openh264':
+  - Status code: 404 for https://codecs.fedoraproject.org/openh264/epel/9/x86_64/os/repodata/repomd.xml.asc (IP: 3.70.22.218)
+  - Status code: 404 for https://codecs.fedoraproject.org/openh264/epel/9/x86_64/os/repodata/repomd.xml.asc (IP: 35.178.204.134)
+Error: Failed to download metadata for repo 'epel-cisco-openh264': GPG verification is enabled, but GPG signature is not available. This may be an error or the repository does not support GPG verification: Status code: 404 for https://codecs.fedoraproject.org/openh264/epel/9/x86_64/os/repodata/repomd.xml.asc (IP: 3.70.22.218)
+Ignoring repositories: epel-cisco-openh264
+Dependencies resolved.
+================================================================================
+ Package                  Arch     Version                    Repository   Size
+================================================================================
+Installing:
+ systemd-journal-remote   x86_64   252-55.el9_7.7.alma.1      appstream   149 k
+Installing dependencies:
+ libmicrohttpd            x86_64   1:0.9.72-5.el9             appstream    85 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages
+
+Total download size: 235 k
+Installed size: 390 k
+Downloading Packages:
+(1/2): systemd-journal-remote-252-55.el9_7.7.al 976 kB/s | 149 kB     00:00    
+(2/2): libmicrohttpd-0.9.72-5.el9.x86_64.rpm    535 kB/s |  85 kB     00:00    
+--------------------------------------------------------------------------------
+Total                                           335 kB/s | 235 kB     00:00     
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : libmicrohttpd-1:0.9.72-5.el9.x86_64                    1/2 
+  Running scriptlet: systemd-journal-remote-252-55.el9_7.7.alma.1.x86_64    2/2 
+  Installing       : systemd-journal-remote-252-55.el9_7.7.alma.1.x86_64    2/2 
+  Running scriptlet: systemd-journal-remote-252-55.el9_7.7.alma.1.x86_64    2/2 
+  Verifying        : libmicrohttpd-1:0.9.72-5.el9.x86_64                    1/2 
+  Verifying        : systemd-journal-remote-252-55.el9_7.7.alma.1.x86_64    2/2 
+
+Installed:
+  libmicrohttpd-1:0.9.72-5.el9.x86_64                                           
+  systemd-journal-remote-252-55.el9_7.7.alma.1.x86_64                           
+
+Complete!
+Remediating rule 117/395: 'xccdf_org.ssgproject.content_rule_service_systemd-journald_enabled'
+The unit files have no installation config (WantedBy=, RequiredBy=, Also=,
+Alias= settings in the [Install] section, and DefaultInstance= for template
+units). This means they are not meant to be enabled or disabled using systemctl.
+ 
+Possible reasons for having this kind of units are:
+• A unit may be statically enabled by being symlinked from another unit's
+  .wants/ or .requires/ directory.
+• A unit's purpose may be to act as a helper for some other unit which has
+  a requirement dependency on it.
+• A unit may be started when needed via activation (socket, path, timer,
+  D-Bus, udev, scripted systemctl call, ...).
+• In case of template units, the unit is meant to be enabled with some
+  instance name specified.
+Remediating rule 118/395: 'xccdf_org.ssgproject.content_rule_journald_compress'
+Remediating rule 119/395: 'xccdf_org.ssgproject.content_rule_journald_storage'
+Remediating rule 120/395: 'xccdf_org.ssgproject.content_rule_socket_systemd-journal-remote_disabled'
+Created symlink /etc/systemd/system/systemd-journal-remote.socket → /dev/null.
+Remediating rule 121/395: 'xccdf_org.ssgproject.content_rule_package_firewalld_installed'
+Remediating rule 122/395: 'xccdf_org.ssgproject.content_rule_service_firewalld_enabled'
+Remediating rule 123/395: 'xccdf_org.ssgproject.content_rule_firewalld_loopback_traffic_restricted'
+active
+success
+success
+success
+Remediating rule 124/395: 'xccdf_org.ssgproject.content_rule_firewalld_loopback_traffic_trusted'
+active
+success
+success
+Remediating rule 125/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_accept_ra'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 126/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_accept_redirects'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 127/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_accept_source_route'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 128/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_all_forwarding'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 129/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_ra'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 130/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_redirects'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 131/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv6_conf_default_accept_source_route'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 132/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_accept_redirects'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 133/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_accept_source_route'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 134/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_log_martians'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 135/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_rp_filter'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 136/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_secure_redirects'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 137/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_accept_redirects'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 138/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_accept_source_route'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 139/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_log_martians'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 140/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_rp_filter'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 141/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_secure_redirects'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 142/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_icmp_echo_ignore_broadcasts'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 143/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_icmp_ignore_bogus_error_responses'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 144/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_tcp_syncookies'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 145/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_all_send_redirects'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 146/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_conf_default_send_redirects'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 147/395: 'xccdf_org.ssgproject.content_rule_sysctl_net_ipv4_ip_forward'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 148/395: 'xccdf_org.ssgproject.content_rule_package_nftables_installed'
+Remediating rule 149/395: 'xccdf_org.ssgproject.content_rule_service_nftables_disabled'
+Created symlink /etc/systemd/system/nftables.service → /dev/null.
+Failed to reset failed state of unit nftables.service: Unit nftables.service not loaded.
+Remediating rule 150/395: 'xccdf_org.ssgproject.content_rule_kernel_module_dccp_disabled'
+grep: /etc/modprobe.d/dccp.conf: No such file or directory
+Remediating rule 151/395: 'xccdf_org.ssgproject.content_rule_kernel_module_rds_disabled'
+grep: /etc/modprobe.d/rds.conf: No such file or directory
+Remediating rule 152/395: 'xccdf_org.ssgproject.content_rule_kernel_module_sctp_disabled'
+grep: /etc/modprobe.d/sctp.conf: No such file or directory
+Remediating rule 153/395: 'xccdf_org.ssgproject.content_rule_kernel_module_tipc_disabled'
+grep: /etc/modprobe.d/tipc.conf: No such file or directory
+Remediating rule 154/395: 'xccdf_org.ssgproject.content_rule_service_bluetooth_disabled'
+Failed to stop bluetooth.service: Unit bluetooth.service not loaded.
+Failed to disable unit: Unit file bluetooth.service does not exist.
+Unit bluetooth.service does not exist, proceeding anyway.
+Created symlink /etc/systemd/system/bluetooth.service → /dev/null.
+Failed to reset failed state of unit bluetooth.service: Unit bluetooth.service not loaded.
+Remediating rule 155/395: 'xccdf_org.ssgproject.content_rule_wireless_disable_interfaces'
+Remediating rule 156/395: 'xccdf_org.ssgproject.content_rule_dir_perms_world_writable_sticky_bits'
+Remediating rule 157/395: 'xccdf_org.ssgproject.content_rule_file_permissions_unauthorized_world_writable'
+Remediating rule 158/395: 'xccdf_org.ssgproject.content_rule_file_permissions_ungroupowned'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_file_permissions_ungroupowned' IS MISSING!
+Remediating rule 159/395: 'xccdf_org.ssgproject.content_rule_no_files_unowned_by_user'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_no_files_unowned_by_user' IS MISSING!
+Remediating rule 160/395: 'xccdf_org.ssgproject.content_rule_file_etc_security_opasswd'
+Remediating rule 161/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_backup_etc_group'
+Remediating rule 162/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_backup_etc_gshadow'
+Remediating rule 163/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_backup_etc_passwd'
+Remediating rule 164/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_backup_etc_shadow'
+Remediating rule 165/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_etc_group'
+Remediating rule 166/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_etc_gshadow'
+Remediating rule 167/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_etc_passwd'
+Remediating rule 168/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_etc_shadow'
+Remediating rule 169/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_etc_shells'
+Remediating rule 170/395: 'xccdf_org.ssgproject.content_rule_file_owner_backup_etc_group'
+Remediating rule 171/395: 'xccdf_org.ssgproject.content_rule_file_owner_backup_etc_gshadow'
+Remediating rule 172/395: 'xccdf_org.ssgproject.content_rule_file_owner_backup_etc_passwd'
+Remediating rule 173/395: 'xccdf_org.ssgproject.content_rule_file_owner_backup_etc_shadow'
+Remediating rule 174/395: 'xccdf_org.ssgproject.content_rule_file_owner_etc_group'
+Remediating rule 175/395: 'xccdf_org.ssgproject.content_rule_file_owner_etc_gshadow'
+Remediating rule 176/395: 'xccdf_org.ssgproject.content_rule_file_owner_etc_passwd'
+Remediating rule 177/395: 'xccdf_org.ssgproject.content_rule_file_owner_etc_shadow'
+Remediating rule 178/395: 'xccdf_org.ssgproject.content_rule_file_owner_etc_shells'
+Remediating rule 179/395: 'xccdf_org.ssgproject.content_rule_file_permissions_backup_etc_group'
+Remediating rule 180/395: 'xccdf_org.ssgproject.content_rule_file_permissions_backup_etc_gshadow'
+Remediating rule 181/395: 'xccdf_org.ssgproject.content_rule_file_permissions_backup_etc_passwd'
+Remediating rule 182/395: 'xccdf_org.ssgproject.content_rule_file_permissions_backup_etc_shadow'
+Remediating rule 183/395: 'xccdf_org.ssgproject.content_rule_file_permissions_etc_group'
+Remediating rule 184/395: 'xccdf_org.ssgproject.content_rule_file_permissions_etc_gshadow'
+Remediating rule 185/395: 'xccdf_org.ssgproject.content_rule_file_permissions_etc_passwd'
+Remediating rule 186/395: 'xccdf_org.ssgproject.content_rule_file_permissions_etc_shadow'
+Remediating rule 187/395: 'xccdf_org.ssgproject.content_rule_file_permissions_etc_shells'
+Remediating rule 188/395: 'xccdf_org.ssgproject.content_rule_service_autofs_disabled'
+Remediation is not applicable, nothing was done
+Remediating rule 189/395: 'xccdf_org.ssgproject.content_rule_kernel_module_cramfs_disabled'
+grep: /etc/modprobe.d/cramfs.conf: No such file or directory
+Remediating rule 190/395: 'xccdf_org.ssgproject.content_rule_kernel_module_freevxfs_disabled'
+grep: /etc/modprobe.d/freevxfs.conf: No such file or directory
+Remediating rule 191/395: 'xccdf_org.ssgproject.content_rule_kernel_module_hfs_disabled'
+grep: /etc/modprobe.d/hfs.conf: No such file or directory
+Remediating rule 192/395: 'xccdf_org.ssgproject.content_rule_kernel_module_hfsplus_disabled'
+grep: /etc/modprobe.d/hfsplus.conf: No such file or directory
+Remediating rule 193/395: 'xccdf_org.ssgproject.content_rule_kernel_module_jffs2_disabled'
+grep: /etc/modprobe.d/jffs2.conf: No such file or directory
+Remediating rule 194/395: 'xccdf_org.ssgproject.content_rule_kernel_module_squashfs_disabled'
+grep: /etc/modprobe.d/squashfs.conf: No such file or directory
+Remediating rule 195/395: 'xccdf_org.ssgproject.content_rule_kernel_module_udf_disabled'
+grep: /etc/modprobe.d/udf.conf: No such file or directory
+Remediating rule 196/395: 'xccdf_org.ssgproject.content_rule_kernel_module_usb-storage_disabled'
+grep: /etc/modprobe.d/usb-storage.conf: No such file or directory
+Remediating rule 197/395: 'xccdf_org.ssgproject.content_rule_mount_option_dev_shm_nodev'
+Remediating rule 198/395: 'xccdf_org.ssgproject.content_rule_mount_option_dev_shm_noexec'
+Remediating rule 199/395: 'xccdf_org.ssgproject.content_rule_mount_option_dev_shm_nosuid'
+Remediating rule 200/395: 'xccdf_org.ssgproject.content_rule_mount_option_home_nodev'
+Remediating rule 201/395: 'xccdf_org.ssgproject.content_rule_mount_option_home_nosuid'
+Remediating rule 202/395: 'xccdf_org.ssgproject.content_rule_mount_option_tmp_nodev'
+Remediating rule 203/395: 'xccdf_org.ssgproject.content_rule_mount_option_tmp_noexec'
+Remediating rule 204/395: 'xccdf_org.ssgproject.content_rule_mount_option_tmp_nosuid'
+Remediating rule 205/395: 'xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_nodev'
+Remediating rule 206/395: 'xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_noexec'
+Remediating rule 207/395: 'xccdf_org.ssgproject.content_rule_mount_option_var_log_audit_nosuid'
+Remediating rule 208/395: 'xccdf_org.ssgproject.content_rule_mount_option_var_log_nodev'
+Remediating rule 209/395: 'xccdf_org.ssgproject.content_rule_mount_option_var_log_noexec'
+Remediating rule 210/395: 'xccdf_org.ssgproject.content_rule_mount_option_var_log_nosuid'
+Remediating rule 211/395: 'xccdf_org.ssgproject.content_rule_mount_option_var_nodev'
+Remediating rule 212/395: 'xccdf_org.ssgproject.content_rule_mount_option_var_nosuid'
+Remediating rule 213/395: 'xccdf_org.ssgproject.content_rule_mount_option_var_tmp_nodev'
+Remediating rule 214/395: 'xccdf_org.ssgproject.content_rule_mount_option_var_tmp_noexec'
+Remediating rule 215/395: 'xccdf_org.ssgproject.content_rule_mount_option_var_tmp_nosuid'
+Remediating rule 216/395: 'xccdf_org.ssgproject.content_rule_sysctl_kernel_yama_ptrace_scope'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 217/395: 'xccdf_org.ssgproject.content_rule_coredump_disable_backtraces'
+Remediating rule 218/395: 'xccdf_org.ssgproject.content_rule_coredump_disable_storage'
+Remediating rule 219/395: 'xccdf_org.ssgproject.content_rule_sysctl_kernel_randomize_va_space'
+grep: /run/sysctl.d/*.conf: No such file or directory
+grep: /usr/local/lib/sysctl.d/*.conf: No such file or directory
+Remediating rule 220/395: 'xccdf_org.ssgproject.content_rule_package_libselinux_installed'
+Remediating rule 221/395: 'xccdf_org.ssgproject.content_rule_package_mcstrans_removed'
+Remediating rule 222/395: 'xccdf_org.ssgproject.content_rule_package_setroubleshoot_removed'
+Remediating rule 223/395: 'xccdf_org.ssgproject.content_rule_grub2_enable_selinux'
+Remediating rule 224/395: 'xccdf_org.ssgproject.content_rule_selinux_not_disabled'
+System will relabel on next boot
+Remediating rule 225/395: 'xccdf_org.ssgproject.content_rule_selinux_policytype'
+Remediating rule 226/395: 'xccdf_org.ssgproject.content_rule_selinux_state'
+System will relabel on next boot
+Remediating rule 227/395: 'xccdf_org.ssgproject.content_rule_service_avahi-daemon_disabled'
+Remediation is not applicable, nothing was done
+Remediating rule 228/395: 'xccdf_org.ssgproject.content_rule_package_cron_installed'
+Remediating rule 229/395: 'xccdf_org.ssgproject.content_rule_service_crond_enabled'
+Remediating rule 230/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_cron_d'
+Remediating rule 231/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_cron_daily'
+Remediating rule 232/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_cron_hourly'
+Remediating rule 233/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_cron_monthly'
+Remediating rule 234/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_cron_weekly'
+Remediating rule 235/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_crontab'
+Remediating rule 236/395: 'xccdf_org.ssgproject.content_rule_file_owner_cron_d'
+Remediating rule 237/395: 'xccdf_org.ssgproject.content_rule_file_owner_cron_daily'
+Remediating rule 238/395: 'xccdf_org.ssgproject.content_rule_file_owner_cron_hourly'
+Remediating rule 239/395: 'xccdf_org.ssgproject.content_rule_file_owner_cron_monthly'
+Remediating rule 240/395: 'xccdf_org.ssgproject.content_rule_file_owner_cron_weekly'
+Remediating rule 241/395: 'xccdf_org.ssgproject.content_rule_file_owner_crontab'
+Remediating rule 242/395: 'xccdf_org.ssgproject.content_rule_file_permissions_cron_d'
+Remediating rule 243/395: 'xccdf_org.ssgproject.content_rule_file_permissions_cron_daily'
+Remediating rule 244/395: 'xccdf_org.ssgproject.content_rule_file_permissions_cron_hourly'
+Remediating rule 245/395: 'xccdf_org.ssgproject.content_rule_file_permissions_cron_monthly'
+Remediating rule 246/395: 'xccdf_org.ssgproject.content_rule_file_permissions_cron_weekly'
+Remediating rule 247/395: 'xccdf_org.ssgproject.content_rule_file_permissions_crontab'
+Remediating rule 248/395: 'xccdf_org.ssgproject.content_rule_file_at_allow_exists'
+Remediating rule 249/395: 'xccdf_org.ssgproject.content_rule_file_at_deny_not_exist'
+Remediating rule 250/395: 'xccdf_org.ssgproject.content_rule_file_cron_allow_exists'
+Remediating rule 251/395: 'xccdf_org.ssgproject.content_rule_file_cron_deny_not_exist'
+Remediating rule 252/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_at_allow'
+Remediating rule 253/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_cron_allow'
+Remediating rule 254/395: 'xccdf_org.ssgproject.content_rule_file_owner_cron_allow'
+Remediating rule 255/395: 'xccdf_org.ssgproject.content_rule_file_permissions_at_allow'
+Remediating rule 256/395: 'xccdf_org.ssgproject.content_rule_file_permissions_cron_allow'
+Remediating rule 257/395: 'xccdf_org.ssgproject.content_rule_package_dhcp_removed'
+Remediating rule 258/395: 'xccdf_org.ssgproject.content_rule_package_dnsmasq_removed'
+Remediating rule 259/395: 'xccdf_org.ssgproject.content_rule_package_bind_removed'
+Remediating rule 260/395: 'xccdf_org.ssgproject.content_rule_package_ftp_removed'
+Remediating rule 261/395: 'xccdf_org.ssgproject.content_rule_package_vsftpd_removed'
+Remediating rule 262/395: 'xccdf_org.ssgproject.content_rule_package_httpd_removed'
+Remediating rule 263/395: 'xccdf_org.ssgproject.content_rule_package_nginx_removed'
+Remediating rule 264/395: 'xccdf_org.ssgproject.content_rule_package_cyrus-imapd_removed'
+Remediating rule 265/395: 'xccdf_org.ssgproject.content_rule_package_dovecot_removed'
+Remediating rule 266/395: 'xccdf_org.ssgproject.content_rule_package_openldap-clients_removed'
+Remediating rule 267/395: 'xccdf_org.ssgproject.content_rule_has_nonlocal_mta'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_has_nonlocal_mta' IS MISSING!
+Remediating rule 268/395: 'xccdf_org.ssgproject.content_rule_postfix_network_listening_disabled'
+Remediation is not applicable, nothing was done
+Remediating rule 269/395: 'xccdf_org.ssgproject.content_rule_service_rpcbind_disabled'
+Failed to stop rpcbind.service: Unit rpcbind.service not loaded.
+Failed to disable unit: Unit file rpcbind.service does not exist.
+Unit rpcbind.service does not exist, proceeding anyway.
+Created symlink /etc/systemd/system/rpcbind.service → /dev/null.
+Failed to reset failed state of unit rpcbind.service: Unit rpcbind.service not loaded.
+Remediating rule 270/395: 'xccdf_org.ssgproject.content_rule_service_nfs_disabled'
+Failed to stop nfs-server.service: Unit nfs-server.service not loaded.
+Failed to disable unit: Unit file nfs-server.service does not exist.
+Unit nfs-server.service does not exist, proceeding anyway.
+Created symlink /etc/systemd/system/nfs-server.service → /dev/null.
+Failed to reset failed state of unit nfs-server.service: Unit nfs-server.service not loaded.
+Remediating rule 271/395: 'xccdf_org.ssgproject.content_rule_package_chrony_installed'
+Remediating rule 272/395: 'xccdf_org.ssgproject.content_rule_chronyd_specify_remote_server'
+Remediating rule 273/395: 'xccdf_org.ssgproject.content_rule_chronyd_run_as_chrony_user'
+Remediating rule 274/395: 'xccdf_org.ssgproject.content_rule_package_rsync_removed'
+Dependencies resolved.
+================================================================================
+ Package        Architecture    Version                Repository          Size
+================================================================================
+Removing:
+ rsync          x86_64          3.2.5-3.el9            @anaconda          767 k
+
+Transaction Summary
+================================================================================
+Remove  1 Package
+
+Freed space: 767 k
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Erasing          : rsync-3.2.5-3.el9.x86_64                               1/1 
+  Verifying        : rsync-3.2.5-3.el9.x86_64                               1/1 
+
+Removed:
+  rsync-3.2.5-3.el9.x86_64                                                      
+
+Complete!
+Remediating rule 275/395: 'xccdf_org.ssgproject.content_rule_no_rsh_trust_files'
+Remediation is not applicable, nothing was done
+Remediating rule 276/395: 'xccdf_org.ssgproject.content_rule_package_telnet-server_removed'
+Remediating rule 277/395: 'xccdf_org.ssgproject.content_rule_package_telnet_removed'
+Remediating rule 278/395: 'xccdf_org.ssgproject.content_rule_package_tftp-server_removed'
+Remediating rule 279/395: 'xccdf_org.ssgproject.content_rule_package_tftp_removed'
+Remediating rule 280/395: 'xccdf_org.ssgproject.content_rule_service_cups_disabled'
+Failed to stop cups.service: Unit cups.service not loaded.
+Failed to disable unit: Unit file cups.service does not exist.
+Unit cups.service does not exist, proceeding anyway.
+Created symlink /etc/systemd/system/cups.service → /dev/null.
+Failed to reset failed state of unit cups.service: Unit cups.service not loaded.
+Remediating rule 281/395: 'xccdf_org.ssgproject.content_rule_package_squid_removed'
+Remediating rule 282/395: 'xccdf_org.ssgproject.content_rule_package_samba_removed'
+Remediating rule 283/395: 'xccdf_org.ssgproject.content_rule_package_net-snmp_removed'
+Remediating rule 284/395: 'xccdf_org.ssgproject.content_rule_file_groupowner_sshd_config'
+Remediating rule 285/395: 'xccdf_org.ssgproject.content_rule_file_groupownership_sshd_private_key'
+Remediating rule 286/395: 'xccdf_org.ssgproject.content_rule_file_groupownership_sshd_pub_key'
+Remediating rule 287/395: 'xccdf_org.ssgproject.content_rule_file_owner_sshd_config'
+Remediating rule 288/395: 'xccdf_org.ssgproject.content_rule_file_ownership_sshd_private_key'
+Remediating rule 289/395: 'xccdf_org.ssgproject.content_rule_file_ownership_sshd_pub_key'
+Remediating rule 290/395: 'xccdf_org.ssgproject.content_rule_file_permissions_sshd_config'
+Remediating rule 291/395: 'xccdf_org.ssgproject.content_rule_file_permissions_sshd_private_key'
+Remediating rule 292/395: 'xccdf_org.ssgproject.content_rule_file_permissions_sshd_pub_key'
+Remediating rule 293/395: 'xccdf_org.ssgproject.content_rule_sshd_set_keepalive'
+Remediating rule 294/395: 'xccdf_org.ssgproject.content_rule_sshd_set_idle_timeout'
+Remediating rule 295/395: 'xccdf_org.ssgproject.content_rule_disable_host_auth'
+Remediating rule 296/395: 'xccdf_org.ssgproject.content_rule_sshd_disable_empty_passwords'
+Remediating rule 297/395: 'xccdf_org.ssgproject.content_rule_sshd_disable_forwarding'
+Remediating rule 298/395: 'xccdf_org.ssgproject.content_rule_sshd_disable_gssapi_auth'
+Remediating rule 299/395: 'xccdf_org.ssgproject.content_rule_sshd_disable_rhosts'
+Remediating rule 300/395: 'xccdf_org.ssgproject.content_rule_sshd_disable_root_login'
+Remediating rule 301/395: 'xccdf_org.ssgproject.content_rule_sshd_do_not_permit_user_env'
+Remediating rule 302/395: 'xccdf_org.ssgproject.content_rule_sshd_enable_pam'
+Remediating rule 303/395: 'xccdf_org.ssgproject.content_rule_sshd_enable_warning_banner_net'
+Remediating rule 304/395: 'xccdf_org.ssgproject.content_rule_sshd_limit_user_access'
+FIX FOR THIS RULE 'xccdf_org.ssgproject.content_rule_sshd_limit_user_access' IS MISSING!
+Remediating rule 305/395: 'xccdf_org.ssgproject.content_rule_sshd_set_login_grace_time'
+Remediating rule 306/395: 'xccdf_org.ssgproject.content_rule_sshd_set_loglevel_verbose'
+Remediating rule 307/395: 'xccdf_org.ssgproject.content_rule_sshd_set_max_auth_tries'
+Remediating rule 308/395: 'xccdf_org.ssgproject.content_rule_sshd_set_max_sessions'
+Remediating rule 309/395: 'xccdf_org.ssgproject.content_rule_sshd_set_maxstartups'
+Remediating rule 310/395: 'xccdf_org.ssgproject.content_rule_sshd_use_strong_kex'
+Remediating rule 311/395: 'xccdf_org.ssgproject.content_rule_package_xorg-x11-server-common_removed'
+Remediating rule 312/395: 'xccdf_org.ssgproject.content_rule_xwindows_runlevel_target'
+Note: "selinux-autorelabel.target" is the default unit (possibly a runtime override).
+Remediating rule 313/395: 'xccdf_org.ssgproject.content_rule_package_audit-libs_installed'
+Remediating rule 314/395: 'xccdf_org.ssgproject.content_rule_package_audit_installed'
+Remediating rule 315/395: 'xccdf_org.ssgproject.content_rule_service_auditd_enabled'
+Remediating rule 316/395: 'xccdf_org.ssgproject.content_rule_grub2_audit_argument'
+Remediating rule 317/395: 'xccdf_org.ssgproject.content_rule_grub2_audit_backlog_limit_argument'
+Remediating rule 318/395: 'xccdf_org.ssgproject.content_rule_audit_rules_immutable'
+Remediating rule 319/395: 'xccdf_org.ssgproject.content_rule_audit_rules_mac_modification'
+Remediating rule 320/395: 'xccdf_org.ssgproject.content_rule_audit_rules_mac_modification_usr_share'
+Remediating rule 321/395: 'xccdf_org.ssgproject.content_rule_audit_rules_media_export'
+Remediating rule 322/395: 'xccdf_org.ssgproject.content_rule_audit_rules_networkconfig_modification'
+Remediating rule 323/395: 'xccdf_org.ssgproject.content_rule_audit_rules_networkconfig_modification_hostname_file'
+Remediating rule 324/395: 'xccdf_org.ssgproject.content_rule_audit_rules_networkconfig_modification_network_scripts'
+Remediating rule 325/395: 'xccdf_org.ssgproject.content_rule_audit_rules_networkconfig_modification_networkmanager'
+Remediating rule 326/395: 'xccdf_org.ssgproject.content_rule_audit_rules_session_events_btmp'
+Remediating rule 327/395: 'xccdf_org.ssgproject.content_rule_audit_rules_session_events_utmp'
+Remediating rule 328/395: 'xccdf_org.ssgproject.content_rule_audit_rules_session_events_wtmp'
+Remediating rule 329/395: 'xccdf_org.ssgproject.content_rule_audit_rules_suid_auid_privilege_function'
+Remediating rule 330/395: 'xccdf_org.ssgproject.content_rule_audit_rules_sysadmin_actions'
+Remediating rule 331/395: 'xccdf_org.ssgproject.content_rule_audit_rules_usergroup_modification_group'
+Remediating rule 332/395: 'xccdf_org.ssgproject.content_rule_audit_rules_usergroup_modification_gshadow'
+Remediating rule 333/395: 'xccdf_org.ssgproject.content_rule_audit_rules_usergroup_modification_nsswitch_conf'
+Remediating rule 334/395: 'xccdf_org.ssgproject.content_rule_audit_rules_usergroup_modification_opasswd'
+Remediating rule 335/395: 'xccdf_org.ssgproject.content_rule_audit_rules_usergroup_modification_pam_conf'
+Remediating rule 336/395: 'xccdf_org.ssgproject.content_rule_audit_rules_usergroup_modification_pamd'
+Remediating rule 337/395: 'xccdf_org.ssgproject.content_rule_audit_rules_usergroup_modification_passwd'
+Remediating rule 338/395: 'xccdf_org.ssgproject.content_rule_audit_rules_usergroup_modification_shadow'
+Remediating rule 339/395: 'xccdf_org.ssgproject.content_rule_audit_sudo_log_events'
+Remediating rule 340/395: 'xccdf_org.ssgproject.content_rule_directory_permissions_var_log_audit'
+log_file = /var/log/audit/audit.log
+Remediating rule 341/395: 'xccdf_org.ssgproject.content_rule_file_group_ownership_var_log_audit'
+log_file = /var/log/audit/audit.log
+Remediating rule 342/395: 'xccdf_org.ssgproject.content_rule_file_groupownership_audit_configuration'
+Remediating rule 343/395: 'xccdf_org.ssgproject.content_rule_file_ownership_audit_configuration'
+Remediating rule 344/395: 'xccdf_org.ssgproject.content_rule_file_ownership_var_log_audit_stig'
+log_file = /var/log/audit/audit.log
+Remediating rule 345/395: 'xccdf_org.ssgproject.content_rule_file_permissions_audit_configuration'
+Remediating rule 346/395: 'xccdf_org.ssgproject.content_rule_file_permissions_var_log_audit'
+log_file = /var/log/audit/audit.log
+chmod: cannot access '/var/log/audit/audit.log.*': No such file or directory
+Remediating rule 347/395: 'xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_chmod'
+Remediating rule 348/395: 'xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_chown'
+Remediating rule 349/395: 'xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_fchmod'
+Remediating rule 350/395: 'xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_fchmodat'
+Remediating rule 351/395: 'xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_fchown'
+Remediating rule 352/395: 'xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_fchownat'
+Remediating rule 353/395: 'xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_fremovexattr'
+Remediating rule 354/395: 'xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_fsetxattr'
+Remediating rule 355/395: 'xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_lchown'
+Remediating rule 356/395: 'xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_lremovexattr'
+Remediating rule 357/395: 'xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_lsetxattr'
+Remediating rule 358/395: 'xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_removexattr'
+Remediating rule 359/395: 'xccdf_org.ssgproject.content_rule_audit_rules_dac_modification_setxattr'
+Remediating rule 360/395: 'xccdf_org.ssgproject.content_rule_audit_rules_execution_chacl'
+Remediating rule 361/395: 'xccdf_org.ssgproject.content_rule_audit_rules_execution_setfacl'
+Remediating rule 362/395: 'xccdf_org.ssgproject.content_rule_audit_rules_execution_chcon'
+Remediating rule 363/395: 'xccdf_org.ssgproject.content_rule_audit_rules_file_deletion_events_rename'
+Remediating rule 364/395: 'xccdf_org.ssgproject.content_rule_audit_rules_file_deletion_events_renameat'
+Remediating rule 365/395: 'xccdf_org.ssgproject.content_rule_audit_rules_file_deletion_events_unlink'
+Remediating rule 366/395: 'xccdf_org.ssgproject.content_rule_audit_rules_file_deletion_events_unlinkat'
+Remediating rule 367/395: 'xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_creat'
+Remediating rule 368/395: 'xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_ftruncate'
+Remediating rule 369/395: 'xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_open'
+Remediating rule 370/395: 'xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_openat'
+Remediating rule 371/395: 'xccdf_org.ssgproject.content_rule_audit_rules_unsuccessful_file_modification_truncate'
+Remediating rule 372/395: 'xccdf_org.ssgproject.content_rule_audit_rules_kernel_module_loading_create'
+Remediating rule 373/395: 'xccdf_org.ssgproject.content_rule_audit_rules_kernel_module_loading_delete'
+Remediating rule 374/395: 'xccdf_org.ssgproject.content_rule_audit_rules_kernel_module_loading_finit'
+Remediating rule 375/395: 'xccdf_org.ssgproject.content_rule_audit_rules_kernel_module_loading_init'
+Remediating rule 376/395: 'xccdf_org.ssgproject.content_rule_audit_rules_kernel_module_loading_query'
+Remediating rule 377/395: 'xccdf_org.ssgproject.content_rule_audit_rules_login_events_faillock'
+Remediating rule 378/395: 'xccdf_org.ssgproject.content_rule_audit_rules_login_events_lastlog'
+Remediating rule 379/395: 'xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands'
+Remediating rule 380/395: 'xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_kmod'
+Remediating rule 381/395: 'xccdf_org.ssgproject.content_rule_audit_rules_privileged_commands_usermod'
+Remediating rule 382/395: 'xccdf_org.ssgproject.content_rule_audit_rules_time_adjtimex'
+Remediating rule 383/395: 'xccdf_org.ssgproject.content_rule_audit_rules_time_clock_settime'
+Remediating rule 384/395: 'xccdf_org.ssgproject.content_rule_audit_rules_time_settimeofday'
+Remediating rule 385/395: 'xccdf_org.ssgproject.content_rule_audit_rules_time_watch_localtime'
+Remediating rule 386/395: 'xccdf_org.ssgproject.content_rule_auditd_data_disk_error_action'
+Remediating rule 387/395: 'xccdf_org.ssgproject.content_rule_auditd_data_disk_full_action'
+Remediating rule 388/395: 'xccdf_org.ssgproject.content_rule_auditd_data_retention_action_mail_acct'
+Remediating rule 389/395: 'xccdf_org.ssgproject.content_rule_auditd_data_retention_admin_space_left_action'
+Remediating rule 390/395: 'xccdf_org.ssgproject.content_rule_auditd_data_retention_max_log_file'
+Remediating rule 391/395: 'xccdf_org.ssgproject.content_rule_auditd_data_retention_max_log_file_action'
+Remediating rule 392/395: 'xccdf_org.ssgproject.content_rule_auditd_data_retention_space_left_action'
+Remediating rule 393/395: 'xccdf_org.ssgproject.content_rule_file_groupownership_audit_binaries'
+stat: cannot statx '/sbin/audispd': No such file or directory
+chgrp: cannot access '/sbin/audispd': No such file or directory
+Remediating rule 394/395: 'xccdf_org.ssgproject.content_rule_file_ownership_audit_binaries'
+stat: cannot statx '/sbin/audispd': No such file or directory
+chown: cannot access '/sbin/audispd': No such file or directory
+Remediating rule 395/395: 'xccdf_org.ssgproject.content_rule_file_permissions_audit_binaries'
+chmod: cannot access '/sbin/audispd': No such file or directory

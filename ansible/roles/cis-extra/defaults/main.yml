@@ -1,0 +1,41 @@
+---
+# ── Vagrant compatibility ─────────────────────────────────────────────────
+vagrant_mode: true                  # Keeps SSH key auth + sudo intact
+vagrant_user: vagrant
+
+# ── Kernel / sysctl ──────────────────────────────────────────────────────
+cis_sysctl_file: /etc/sysctl.d/99-cis.conf
+
+# ── SSH daemon hardening ──────────────────────────────────────────────────
+# These are applied in addition to oscap remediation.
+# Adjust if your environment needs different values.
+ssh_protocol: 2
+ssh_log_level: INFO
+ssh_max_auth_tries: 4
+ssh_ignore_rhosts: "yes"
+ssh_host_based_auth: "no"
+ssh_permit_root_login: "no"
+ssh_permit_empty_passwords: "no"
+ssh_permit_user_environment: "no"
+ssh_client_alive_interval: 300
+ssh_client_alive_count_max: 0
+ssh_login_grace_time: 60
+ssh_banner: /etc/issue.net
+ssh_max_sessions: 4
+ssh_ciphers: "aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr"
+ssh_macs: "hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512,hmac-sha2-256"
+ssh_kex_algorithms: "curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp521,ecdh-sha2-nistp384,ecdh-sha2-nistp256,diffie-hellman-group-exchange-sha256"
+
+# ── Password aging (CIS 5.4.x) ───────────────────────────────────────────
+pass_max_days: 365
+pass_min_days: 1
+pass_warn_age: 7
+
+# ── umask ─────────────────────────────────────────────────────────────────
+default_umask: "027"
+
+# ── Audit rules ──────────────────────────────────────────────────────────
+# oscap adds most rules; we add a few extras here for completeness
+auditd_max_log_file: 32          # MB per log file
+auditd_num_logs: 5
+auditd_max_log_file_action: keep_logs

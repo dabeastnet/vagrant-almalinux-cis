@@ -1,0 +1,67 @@
+---
+# ── CIS 5.2 — SSH Server Configuration ────────────────────────────────────
+# oscap handles most SSH rules; this enforces crypto config and
+# double-checks critical settings.
+
+- name: "CIS 5.2 | Ensure SSH settings are compliant"
+  ansible.builtin.lineinfile:
+    path:   /etc/ssh/sshd_config
+    regexp: "^#?{{ item.key }}\\s"
+    line:   "{{ item.key }} {{ item.value }}"
+    state:  present
+    validate: /usr/sbin/sshd -t -f %s
+  loop:
+    - { key: Protocol,                  value: "{{ ssh_protocol }}" }
+    - { key: LogLevel,                  value: "{{ ssh_log_level }}" }
+    - { key: MaxAuthTries,              value: "{{ ssh_max_auth_tries }}" }
+    - { key: IgnoreRhosts,             value: "{{ ssh_ignore_rhosts }}" }
+    - { key: HostbasedAuthentication,   value: "{{ ssh_host_based_auth }}" }
+    - { key: PermitRootLogin,           value: "{{ ssh_permit_root_login }}" }
+    - { key: PermitEmptyPasswords,      value: "{{ ssh_permit_empty_passwords }}" }
+    - { key: PermitUserEnvironment,     value: "{{ ssh_permit_user_environment }}" }
+    - { key: ClientAliveInterval,       value: "{{ ssh_client_alive_interval }}" }
+    - { key: ClientAliveCountMax,       value: "{{ ssh_client_alive_count_max }}" }
+    - { key: LoginGraceTime,            value: "{{ ssh_login_grace_time }}" }
+    - { key: Banner,                    value: "{{ ssh_banner }}" }
+    - { key: MaxSessions,               value: "{{ ssh_max_sessions }}" }
+    - { key: Ciphers,                   value: "{{ ssh_ciphers }}" }
+    - { key: MACs,                      value: "{{ ssh_macs }}" }
+    - { key: KexAlgorithms,             value: "{{ ssh_kex_algorithms }}" }
+    - { key: X11Forwarding,             value: "no" }
+    - { key: AllowTcpForwarding,        value: "no" }
+    - { key: UseDNS,                    value: "no" }
+    - { key: PubkeyAuthentication,      value: "yes" }
+    - { key: AuthorizedKeysFile,        value: ".ssh/authorized_keys" }
+    - { key: PrintLastLog,              value: "yes" }
+  notify: reload sshd
+
+- name: "CIS 5.2 | Ensure SSH access is limited — only vagrant user in Vagrant mode"
+  ansible.builtin.lineinfile:
+    path:   /etc/ssh/sshd_config
+    regexp: "^#?AllowUsers\\s"
+    line:   "AllowUsers vagrant"
+    state:  present
+  when: vagrant_mode | bool
+  notify: reload sshd
+
+- name: "CIS 5.2 | Set /etc/ssh/sshd_config permissions"
+  ansible.builtin.file:
+    path:  /etc/ssh/sshd_config
+    owner: root
+    group: root
+    mode:  '0600'
+
+- name: "CIS 5.2 | Set SSH host key permissions"
+  ansible.builtin.find:
+    paths: /etc/ssh
+    patterns: "ssh_host_*_key"
+    file_type: file
+  register: ssh_host_keys
+
+- name: "CIS 5.2 | Apply correct mode on SSH host private keys"
+  ansible.builtin.file:
+    path: "{{ item.path }}"
+    owner: root
+    group: root
+    mode:  '0600'
+  loop: "{{ ssh_host_keys.files }}"

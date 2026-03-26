@@ -1,0 +1,22 @@
+---
+# Orchestrator — include all sub-task files in order
+- name: Include filesystem hardening tasks
+  ansible.builtin.include_tasks: filesystem.yml
+  tags: filesystem
+
+- name: Include kernel parameter tasks
+  ansible.builtin.include_tasks: kernel-params.yml
+  tags: kernel
+
+- name: Include SSH hardening tasks
+  ansible.builtin.include_tasks: ssh-hardening.yml
+  tags: ssh
+
+- name: Include auditd configuration tasks
+  ansible.builtin.include_tasks: auditd.yml
+  tags: auditd
+
+- name: Include Vagrant compatibility tasks
+  ansible.builtin.include_tasks: vagrant-compat.yml
+  tags: vagrant
+  when: vagrant_mode | bool

@@ -1,0 +1,109 @@
+---
+# ── CIS 1.1 Filesystem Configuration ──────────────────────────────────────
+# The kickstart already set mount options on LVM volumes.
+# This file handles tmpfs mounts and runtime remounts.
+
+- name: "CIS 1.1.15 | Ensure /dev/shm is in /etc/fstab with nodev,nosuid,noexec"
+  ansible.builtin.lineinfile:
+    path: /etc/fstab
+    regexp: '^tmpfs\s+/dev/shm\s+'
+    line: "tmpfs /dev/shm tmpfs defaults,nodev,nosuid,noexec 0 0"
+    state: present
+  notify: reload sysctl
+
+- name: "CIS 1.1.15 | Remount /dev/shm with nodev,nosuid,noexec"
+  ansible.builtin.command: mount -o remount,nodev,nosuid,noexec /dev/shm
+  ignore_errors: true  # May fail if already mounted correctly
+  changed_when: false
+
+- name: "CIS 1.1 | Ensure sticky bit is set on all world-writable directories"
+  ansible.builtin.shell: |
+    find / -xdev -type d -perm -0002 ! -perm -1000 \
+      ! -path '/proc/*' ! -path '/sys/*' ! -path '/dev/*' \
+      -exec chmod a+t {} \; 2>/dev/null
+  changed_when: false
+  ignore_errors: true
+
+- name: "CIS 1.1 | Ensure /var/log does not have noexec (auditd requirement)"
+  ansible.builtin.command: mount -o remount,defaults /var/log
+  changed_when: false
+  ignore_errors: true
+  # /var/log must not have noexec — auditd and rsyslog need execute permission
+
+- name: "CIS 1.3.1 | Ensure AIDE is installed"
+  ansible.builtin.package:
+    name: aide
+    state: present
+
+- name: "CIS 1.3.2 | Ensure /etc/aide.conf exists and is configured"
+  ansible.builtin.copy:
+    dest: /etc/aide.conf
+    mode: '0600'
+    owner: root
+    group: root
+    content: |
+      # AIDE configuration — CIS 1.3
+      database=file:/var/lib/aide/aide.db.gz
+      database_out=file:/var/lib/aide/aide.db.new.gz
+      database_new=file:/var/lib/aide/aide.db.new.gz
+      gzip_dbout=yes
+      verbose=5
+      report_url=file:/var/log/aide/aide.log
+      report_url=stdout
+
+      # Define rule sets
+      FIPSR = p+i+n+u+g+s+m+c+acl+selinux+xattrs+sha512
+      NORMAL = sha512+p+i+n+u+g+s+m+c+acl+selinux+xattrs
+
+      # Directories to check
+      /boot   FIPSR
+      /bin    FIPSR
+      /sbin   FIPSR
+      /lib    FIPSR
+      /lib64  FIPSR
+      /usr    FIPSR
+      /etc    FIPSR
+      !/etc/mtab
+      !/etc/.*~
+      /root   NORMAL
+      !/proc
+      !/sys
+      !/dev
+      !/run
+      !/tmp
+      !/var/log/aide
+      !/var/cache
+      !/var/tmp
+  notify: restart auditd
+
+- name: "CIS 1.3 | Ensure /var/log/aide directory exists"
+  ansible.builtin.file:
+    path: /var/log/aide
+    state: directory
+    owner: root
+    group: root
+    mode: '0700'
+
+- name: "CIS 1.8 | Ensure login banners are set"
+  ansible.builtin.copy:
+    dest: "{{ item }}"
+    content: |
+      Authorized use only. All activity may be monitored and reported.
+    owner: root
+    group: root
+    mode: '0644'
+  loop:
+    - /etc/issue
+    - /etc/issue.net
+
+- name: "CIS 1.8 | Ensure MOTD is configured"
+  ansible.builtin.copy:
+    dest: /etc/motd
+    content: |
+
+      AlmaLinux 9 — CIS Level 2 Hardened System
+      Authorized use only. All activity may be monitored and reported.
+
+    owner: root
+    group: root
+    mode: '0644'

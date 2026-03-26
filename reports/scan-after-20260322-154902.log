@@ -1,0 +1,4 @@
+WARNING: Datastream component 'scap_org.open-scap_cref_oval-org.almalinux.alsa-9.xml.bz2' points out to the remote 'https://security.almalinux.org/oval/org.almalinux.alsa-9.xml.bz2'. Use '--fetch-remote-resources' option to download it.
+WARNING: Skipping 'https://security.almalinux.org/oval/org.almalinux.alsa-9.xml.bz2' file which is referenced from datastream
+OpenSCAP Error: Unable to open file: '/usr/share/xml/scap/ssg/content/ssg-almalinux9-cpe-dictionary.xml' [/builddir/build/BUILD/openscap-1.3.13/src/source/oscap_source.c:298]
+Unrecognized document type for: /usr/share/xml/scap/ssg/content/ssg-almalinux9-cpe-dictionary.xml [/builddir/build/BUILD/openscap-1.3.13/src/source/oscap_source.c:351]

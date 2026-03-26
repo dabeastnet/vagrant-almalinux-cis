@@ -1,0 +1,471 @@
+WARNING: Datastream component 'scap_org.open-scap_cref_oval-org.almalinux.alsa-9.xml.bz2' points out to the remote 'https://security.almalinux.org/oval/org.almalinux.alsa-9.xml.bz2'. Use '--fetch-remote-resources' option to download it.
+WARNING: Skipping 'https://security.almalinux.org/oval/org.almalinux.alsa-9.xml.bz2' file which is referenced from datastream
+WARNING: Skipping ./oval-org.almalinux.alsa-9.xml.bz2 file which is referenced from XCCDF content
+--- Starting Evaluation ---
+
+Title	Install AIDE
+Rule	xccdf_org.ssgproject.content_rule_package_aide_installed
+Result	pass
+
+Title	Build and Test AIDE Database
+Rule	xccdf_org.ssgproject.content_rule_aide_build_database
+Result	fail
+
+Title	Configure AIDE to Verify the Audit Tools
+Rule	xccdf_org.ssgproject.content_rule_aide_check_audit_tools
+Result	pass
+
+Title	Configure Periodic Execution of AIDE
+Rule	xccdf_org.ssgproject.content_rule_aide_periodic_cron_checking
+Result	pass
+
+Title	Implement Custom Crypto Policy Modules for CIS Benchmark
+Rule	xccdf_org.ssgproject.content_rule_configure_custom_crypto_policy_cis
+Result	pass
+
+Title	Configure SSH to use System Crypto Policy
+Rule	xccdf_org.ssgproject.content_rule_configure_ssh_crypto_policy
+Result	pass
+
+Title	Ensure /dev/shm is configured
+Rule	xccdf_org.ssgproject.content_rule_partition_for_dev_shm
+Result	pass
+
+Title	Ensure /home Located On Separate Partition
+Rule	xccdf_org.ssgproject.content_rule_partition_for_home
+Result	pass
+
+Title	Ensure /tmp Located On Separate Partition
+Rule	xccdf_org.ssgproject.content_rule_partition_for_tmp
+Result	pass
+
+Title	Ensure /var Located On Separate Partition
+Rule	xccdf_org.ssgproject.content_rule_partition_for_var
+Result	pass
+
+Title	Ensure /var/log Located On Separate Partition
+Rule	xccdf_org.ssgproject.content_rule_partition_for_var_log
+Result	pass
+
+Title	Ensure /var/log/audit Located On Separate Partition
+Rule	xccdf_org.ssgproject.content_rule_partition_for_var_log_audit
+Result	pass
+
+Title	Ensure /var/tmp Located On Separate Partition
+Rule	xccdf_org.ssgproject.content_rule_partition_for_var_tmp
+Result	pass
+
+Title	Remove the GDM Package Group
+Rule	xccdf_org.ssgproject.content_rule_package_gdm_removed
+Result	notapplicable
+
+Title	Make sure that the dconf databases are up-to-date with regards to respective keyfiles
+Rule	xccdf_org.ssgproject.content_rule_dconf_db_up_to_date
+Result	notapplicable
+
+Title	Disable the GNOME3 Login User List
+Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_disable_user_list
+Result	notapplicable
+
+Title	Disable XDMCP in GDM
+Rule	xccdf_org.ssgproject.content_rule_gnome_gdm_disable_xdmcp
+Result	notapplicable
+
+Title	Disable GNOME3 Automounting
+Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_disable_automount
+Result	notapplicable
+
+Title	Disable GNOME3 Automount Opening
+Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_disable_automount_open
+Result	notapplicable
+
+Title	Disable GNOME3 Automount running
+Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_disable_autorun
+Result	notapplicable
+
+Title	Set GNOME3 Screensaver Inactivity Timeout
+Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_idle_delay
+Result	notapplicable
+
+Title	Set GNOME3 Screensaver Lock Delay After Activation Period
+Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_lock_delay
+Result	notapplicable
+
+Title	Ensure Users Cannot Change GNOME3 Screensaver Settings
+Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_screensaver_user_locks
+Result	notapplicable
+
+Title	Ensure Users Cannot Change GNOME3 Session Idle Settings
+Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_session_idle_user_locks
+Result	notapplicable
+
+Title	Install sudo Package
+Rule	xccdf_org.ssgproject.content_rule_package_sudo_installed
+Result	pass
+
+Title	Ensure Only Users Logged In To Real tty Can Execute Sudo - sudo use_pty
+Rule	xccdf_org.ssgproject.content_rule_sudo_add_use_pty
+Result	pass
+
+Title	Ensure Sudo Logfile Exists - sudo logfile
+Rule	xccdf_org.ssgproject.content_rule_sudo_custom_logfile
+Result	pass
+
+Title	Ensure Users Re-Authenticate for Privilege Escalation - sudo
+Rule	xccdf_org.ssgproject.content_rule_sudo_require_authentication
+Result	fail
+
+Title	Require Re-Authentication When Using the sudo Command
+Rule	xccdf_org.ssgproject.content_rule_sudo_require_reauthentication
+Result	pass
+
+Title	Ensure gpgcheck Enabled In Main dnf Configuration
+Rule	xccdf_org.ssgproject.content_rule_ensure_gpgcheck_globally_activated
+Result	pass
+
+Title	Ensure gpgcheck Enabled for All dnf Package Repositories
+Rule	xccdf_org.ssgproject.content_rule_ensure_gpgcheck_never_disabled
+Result	pass
+
+Title	Enable authselect
+Rule	xccdf_org.ssgproject.content_rule_enable_authselect
+Result	fail
+
+Title	Ensure Local Login Warning Banner Is Configured Properly
+Rule	xccdf_org.ssgproject.content_rule_banner_etc_issue_cis
+Result	pass
+
+Title	Ensure Remote Login Warning Banner Is Configured Properly
+Rule	xccdf_org.ssgproject.content_rule_banner_etc_issue_net_cis
+Result	pass
+
+Title	Ensure Message Of The Day Is Configured Properly
+Rule	xccdf_org.ssgproject.content_rule_banner_etc_motd_cis
+Result	pass
+
+Title	Verify Group Ownership of System Login Banner
+Rule	xccdf_org.ssgproject.content_rule_file_groupowner_etc_issue
+Result	pass
+
+Title	Verify Group Ownership of System Login Banner for Remote Connections
+Rule	xccdf_org.ssgproject.content_rule_file_groupowner_etc_issue_net
+Result	pass
+
+Title	Verify Group Ownership of Message of the Day Banner
+Rule	xccdf_org.ssgproject.content_rule_file_groupowner_etc_motd
+Result	pass
+
+Title	Verify ownership of System Login Banner
+Rule	xccdf_org.ssgproject.content_rule_file_owner_etc_issue
+Result	pass
+
+Title	Verify ownership of System Login Banner for Remote Connections
+Rule	xccdf_org.ssgproject.content_rule_file_owner_etc_issue_net
+Result	pass
+
+Title	Verify ownership of Message of the Day Banner
+Rule	xccdf_org.ssgproject.content_rule_file_owner_etc_motd
+Result	pass
+
+Title	Verify permissions on System Login Banner
+Rule	xccdf_org.ssgproject.content_rule_file_permissions_etc_issue
+Result	pass
+
+Title	Verify permissions on System Login Banner for Remote Connections
+Rule	xccdf_org.ssgproject.content_rule_file_permissions_etc_issue_net
+Result	pass
+
+Title	Verify permissions on Message of the Day Banner
+Rule	xccdf_org.ssgproject.content_rule_file_permissions_etc_motd
+Result	pass
+
+Title	Enable GNOME3 Login Warning Banner
+Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_banner_enabled
+Result	notapplicable
+
+Title	Set the GNOME3 Login Warning Banner Text
+Rule	xccdf_org.ssgproject.content_rule_dconf_gnome_login_banner_text
+Result	notapplicable
+
+Title	Install pam_pwquality Package
+Rule	xccdf_org.ssgproject.content_rule_package_pam_pwquality_installed
+Result	pass
+
+Title	Configure the Use of the pam_faillock.so Module in the /etc/pam.d/password-auth File.
+Rule	xccdf_org.ssgproject.content_rule_account_password_pam_faillock_password_auth
+Result	fail
+
+Title	Configure the Use of the pam_faillock.so Module in the /etc/pam.d/system-auth File.
+Rule	xccdf_org.ssgproject.content_rule_account_password_pam_faillock_system_auth
+Result	fail
+
+Title	Limit Password Reuse: password-auth
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_remember_password_auth
+Result	fail
+
+Title	Limit Password Reuse: system-auth
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_pwhistory_remember_system_auth
+Result	fail
+
+Title	Lock Accounts After Failed Password Attempts
+Rule	xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_deny
+Result	fail
+
+Title	Configure the root Account for Failed Password Attempts
+Rule	xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_deny_root
+Result	fail
+
+Title	Set Lockout Time for Failed Password Attempts
+Rule	xccdf_org.ssgproject.content_rule_accounts_passwords_pam_faillock_unlock_time
+Result	fail
+
+Title	Ensure PAM Enforces Password Requirements - Prevent the Use of Dictionary Words
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_dictcheck
+Result	pass
+
+Title	Ensure PAM Enforces Password Requirements - Minimum Different Characters
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_difok
+Result	pass
+
+Title	Ensure PAM Enforces Password Requirements - Enforce for root User
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_enforce_root
+Result	pass
+
+Title	Set Password Maximum Consecutive Repeating Characters
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_maxrepeat
+Result	pass
+
+Title	Limit the maximum number of sequential characters in passwords
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_maxsequence
+Result	pass
+
+Title	Ensure PAM Enforces Password Requirements - Minimum Different Categories
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_minclass
+Result	pass
+
+Title	Ensure PAM Enforces Password Requirements - Minimum Length
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_pam_minlen
+Result	pass
+
+Title	Set Password Hashing Algorithm in /etc/libuser.conf
+Rule	xccdf_org.ssgproject.content_rule_set_password_hashing_algorithm_libuserconf
+Result	pass
+
+Title	Set Password Hashing Algorithm in /etc/login.defs
+Rule	xccdf_org.ssgproject.content_rule_set_password_hashing_algorithm_logindefs
+Result	pass
+
+Title	Set PAM''s Password Hashing Algorithm - password-auth
+Rule	xccdf_org.ssgproject.content_rule_set_password_hashing_algorithm_passwordauth
+Result	pass
+
+Title	Set PAM''s Password Hashing Algorithm
+Rule	xccdf_org.ssgproject.content_rule_set_password_hashing_algorithm_systemauth
+Result	pass
+
+Title	Ensure All Accounts on the System Have Unique User IDs
+Rule	xccdf_org.ssgproject.content_rule_account_unique_id
+Result	pass
+
+Title	Ensure All Groups on the System Have Unique Group ID
+Rule	xccdf_org.ssgproject.content_rule_group_unique_id
+Result	pass
+
+Title	Set Account Expiration Following Inactivity
+Rule	xccdf_org.ssgproject.content_rule_account_disable_post_pw_expiration
+Result	pass
+
+Title	Ensure All Accounts on the System Have Unique Names
+Rule	xccdf_org.ssgproject.content_rule_account_unique_name
+Result	pass
+
+Title	Set Password Maximum Age
+Rule	xccdf_org.ssgproject.content_rule_accounts_maximum_age_login_defs
+Result	pass
+
+Title	Set Password Minimum Age
+Rule	xccdf_org.ssgproject.content_rule_accounts_minimum_age_login_defs
+Result	pass
+
+Title	Set Existing Passwords Maximum Age
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_set_max_life_existing
+Result	fail
+
+Title	Set Existing Passwords Minimum Age
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_set_min_life_existing
+Result	pass
+
+Title	Set Existing Passwords Warning Age
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_set_warn_age_existing
+Result	pass
+
+Title	Set Password Warning Age
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_warn_age_login_defs
+Result	pass
+
+Title	Set existing passwords a period of inactivity before they been locked
+Rule	xccdf_org.ssgproject.content_rule_accounts_set_post_pw_existing
+Result	pass
+
+Title	Verify All Account Password Hashes are Shadowed
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_all_shadowed
+Result	pass
+
+Title	Ensure all users last password change date is in the past
+Rule	xccdf_org.ssgproject.content_rule_accounts_password_last_change_is_in_past
+Result	pass
+
+Title	All GIDs referenced in /etc/passwd must be defined in /etc/group
+Rule	xccdf_org.ssgproject.content_rule_gid_passwd_group_same
+Result	pass
+
+Title	Prevent Login to Accounts With Empty Password
+Rule	xccdf_org.ssgproject.content_rule_no_empty_passwords
+Result	fail
+
+Title	Ensure There Are No Accounts With Blank or Null Passwords
+Rule	xccdf_org.ssgproject.content_rule_no_empty_passwords_etc_shadow
+Result	pass
+
+Title	Verify No .forward Files Exist
+Rule	xccdf_org.ssgproject.content_rule_no_forward_files
+Result	pass
+
+Title	Verify No netrc Files Exist
+Rule	xccdf_org.ssgproject.content_rule_no_netrc_files
+Result	pass
+
+Title	Verify Only Root Has UID 0
+Rule	xccdf_org.ssgproject.content_rule_accounts_no_uid_except_zero
+Result	pass
+
+Title	Verify Root Has A Primary GID 0
+Rule	xccdf_org.ssgproject.content_rule_accounts_root_gid_zero
+Result	pass
+
+Title	Ensure the Group Used by pam_wheel.so Module Exists on System and is Empty
+Rule	xccdf_org.ssgproject.content_rule_ensure_pam_wheel_group_empty
+Result	pass
+
+Title	Ensure Authentication Required for Single User Mode
+Rule	xccdf_org.ssgproject.content_rule_ensure_root_password_configured
+Result	pass
+
+Title	Verify Only Group Root Has GID 0
+Rule	xccdf_org.ssgproject.content_rule_groups_no_zero_gid_except_root
+Result	pass
+
+Title	Ensure that System Accounts Are Locked
+Rule	xccdf_org.ssgproject.content_rule_no_password_auth_for_systemaccounts
+Result	pass
+
+Title	Ensure that System Accounts Do Not Run a Shell Upon Login
+Rule	xccdf_org.ssgproject.content_rule_no_shelllogin_for_systemaccounts
+Result	pass
+
+Title	Enforce Usage of pam_wheel with Group Parameter for su Authentication
+Rule	xccdf_org.ssgproject.content_rule_use_pam_wheel_group_for_su
+Result	pass
+
+Title	Set Interactive Session Timeout
+Rule	xccdf_org.ssgproject.content_rule_accounts_tmout
+Result	pass
+
+Title	User Initialization Files Must Be Group-Owned By The Primary Group
+Rule	xccdf_org.ssgproject.content_rule_accounts_user_dot_group_ownership
+Result	pass
+
+Title	User Initialization Files Must Not Run World-Writable Programs
+Rule	xccdf_org.ssgproject.content_rule_accounts_user_dot_no_world_writable_programs
+Result	pass
+
+Title	User Initialization Files Must Be Owned By the Primary User
+Rule	xccdf_org.ssgproject.content_rule_accounts_user_dot_user_ownership
+Result	pass
+
+Title	All Interactive Users Home Directories Must Exist
+Rule	xccdf_org.ssgproject.content_rule_accounts_user_interactive_home_directory_exists
+Result	pass
+
+Title	Ensure All User Initialization Files Have Mode 0740 Or Less Permissive
+Rule	xccdf_org.ssgproject.content_rule_file_permission_user_init_files
+Result	pass
+
+Title	All Interactive User Home Directories Must Have mode 0750 Or Less Permissive
+Rule	xccdf_org.ssgproject.content_rule_file_permissions_home_directories
+Result	pass
+
+Title	Ensure that Root's Path Does Not Include World or Group-Writable Directories
+Rule	xccdf_org.ssgproject.content_rule_accounts_root_path_dirs_no_write
+Result	pass
+
+Title	Ensure that All Root's Path Directories Are Owned by Root
+Rule	xccdf_org.ssgproject.content_rule_no_dirs_unowned_by_root
+Result	pass
+
+Title	Ensure that All Entries in The Path of Root Are Directories
+Rule	xccdf_org.ssgproject.content_rule_root_path_all_dirs
+Result	pass
+
+Title	Ensure that Root's Path Does Not Include Relative Paths or Null Directories
+Rule	xccdf_org.ssgproject.content_rule_root_path_no_dot
+Result	pass
+
+Title	Ensure the Default Bash Umask is Set Correctly
+Rule	xccdf_org.ssgproject.content_rule_accounts_umask_etc_bashrc
+Result	pass
+
+Title	Ensure the Default Umask is Set Correctly in login.defs
+Rule	xccdf_org.ssgproject.content_rule_accounts_umask_etc_login_defs
+Result	pass
+
+Title	Ensure the Default Umask is Set Correctly in /etc/profile
+Rule	xccdf_org.ssgproject.content_rule_accounts_umask_etc_profile
+Result	pass
+
+Title	Verify /boot/grub2/grub.cfg Group Ownership
+Rule	xccdf_org.ssgproject.content_rule_file_groupowner_grub2_cfg
+Result	pass
+
+Title	Verify /boot/grub2/user.cfg Group Ownership
+Rule	xccdf_org.ssgproject.content_rule_file_groupowner_user_cfg
+Result	pass
+
+Title	Verify /boot/grub2/grub.cfg User Ownership
+Rule	xccdf_org.ssgproject.content_rule_file_owner_grub2_cfg
+Result	pass
+
+Title	Verify /boot/grub2/user.cfg User Ownership
+Rule	xccdf_org.ssgproject.content_rule_file_owner_user_cfg
+Result	pass
+
+Title	Verify /boot/grub2/grub.cfg Permissions
+Rule	xccdf_org.ssgproject.content_rule_file_permissions_grub2_cfg
+Result	pass
+
+Title	Verify /boot/grub2/user.cfg Permissions
+Rule	xccdf_org.ssgproject.content_rule_file_permissions_user_cfg
+Result	pass
+
+Title	Set Boot Loader Password in grub2
+Rule	xccdf_org.ssgproject.content_rule_grub2_password
+Result	fail
+
+Title	Ensure Log Files Are Owned By Appropriate Group
+Rule	xccdf_org.ssgproject.content_rule_rsyslog_files_groupownership
+Result	pass
+
+Title	Ensure Log Files Are Owned By Appropriate User
+Rule	xccdf_org.ssgproject.content_rule_rsyslog_files_ownership
+Result	pass
+
+Title	Ensure System Log Files Have Correct Permissions
+Rule	xccdf_org.ssgproject.content_rule_rsyslog_files_permissions
+Result	pass
+
+Title	Install systemd-journal-remote Package
+Rule	xccdf_org.ssgproject.content_rule_package_systemd-journal-remote_installed
+Result	pass
+
+Title	Enable systemd-journald Service
+Rule	xccdf_org.ssgproject.content_rule_service_systemd-journald_enabled

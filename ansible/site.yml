@@ -1,0 +1,18 @@
+---
+# =============================================================================
+# site.yml — main Ansible playbook
+# Called by Vagrant ansible_local provisioner (Step 3).
+# Applies extra CIS controls that oscap auto-remediation misses or
+# that must be set before the remediation script runs.
+# =============================================================================
+- name: CIS Level 2 extra hardening + Vagrant compatibility
+  hosts: all
+  become: true
+  gather_facts: true
+
+  vars:
+    # Set to false in non-Vagrant environments
+    vagrant_mode: "{{ vagrant_mode | default(true) }}"
+
+  roles:
+    - cis-extra

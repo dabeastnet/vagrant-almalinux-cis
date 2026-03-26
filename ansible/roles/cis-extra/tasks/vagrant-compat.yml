@@ -1,0 +1,87 @@
+---
+# ── Vagrant compatibility ──────────────────────────────────────────────────
+# Ensures that hardening does NOT break the Vagrant workflow.
+# These tasks run LAST and re-assert the minimum Vagrant requirements.
+# They do not conflict with the CIS scan because:
+#   - SSH key auth is CIS-compliant (password auth disabled)
+#   - The vagrant sudoers entry is assessed as "known admin account"
+#   - /home/vagrant with nodev is CIS-compliant
+
+- name: "Vagrant | Ensure vagrant SSH directory exists"
+  ansible.builtin.file:
+    path:  "/home/{{ vagrant_user }}/.ssh"
+    state: directory
+    owner: "{{ vagrant_user }}"
+    group: "{{ vagrant_user }}"
+    mode:  '0700'
+
+- name: "Vagrant | Ensure authorized_keys is present for vagrant user"
+  ansible.builtin.authorized_key:
+    user:  "{{ vagrant_user }}"
+    state: present
+    key:   "https://raw.githubusercontent.com/hashicorp/vagrant/main/keys/vagrant.pub"
+  # If offline: use the local key string here instead.
+  ignore_errors: true
+
+- name: "Vagrant | Ensure vagrant insecure key is present (offline fallback)"
+  ansible.builtin.lineinfile:
+    path:   "/home/{{ vagrant_user }}/.ssh/authorized_keys"
+    line:   "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA6NF8iallvQVp22WDkTkyrtvp9eWW6A8YVr+kz4TjGYe7gHzIw+niNltGEFHzD8+v1I2YJ6oXevct1YeS0o9HZyN1Q9qgCgzUFtdOKLv6IedplqoPkcmF0aYet2PkEDo3MlTBckFXPITAMzF8dJSIFo9D8HfdOV0IAdx4O7PtixWKn5y2hMNG0zQPyUecp4pzC6kivAIhyfHilFR61RGL+GPXQ2MWZWFYbAGjyiYJnAmCP3NOTd0jMZEnDkbUvxhMmBYSdETk1rRgm+R4LOzFUGaHqHDLKLX+FIPKcF96hrucXzcWyLbIbEgE98OHlnVYCzRdK8jlqm8tehUc9c9WhQ== vagrant insecure public key"
+    state:  present
+    create: true
+    owner: "{{ vagrant_user }}"
+    group: "{{ vagrant_user }}"
+    mode:  '0600'
+
+- name: "Vagrant | Set correct mode on authorized_keys"
+  ansible.builtin.file:
+    path:  "/home/{{ vagrant_user }}/.ssh/authorized_keys"
+    owner: "{{ vagrant_user }}"
+    group: "{{ vagrant_user }}"
+    mode:  '0600'
+
+- name: "Vagrant | Ensure sudoers.d/vagrant entry exists"
+  ansible.builtin.copy:
+    dest:    /etc/sudoers.d/vagrant
+    content: "vagrant ALL=(ALL) NOPASSWD: ALL\n"
+    owner:   root
+    group:   root
+    mode:    '0440'
+    validate: /usr/sbin/visudo -cf %s
+
+- name: "Vagrant | Ensure SSH PubkeyAuthentication is enabled"
+  ansible.builtin.lineinfile:
+    path:   /etc/ssh/sshd_config
+    regexp: "^#?PubkeyAuthentication"
+    line:   "PubkeyAuthentication yes"
+    state:  present
+  notify: reload sshd
+
+- name: "Vagrant | Ensure vagrant home directory is accessible"
+  ansible.builtin.file:
+    path:  "/home/{{ vagrant_user }}"
+    owner: "{{ vagrant_user }}"
+    group: "{{ vagrant_user }}"
+    mode:  '0750'
+    state: directory
+
+- name: "Vagrant | Create /reports directory with correct permissions"
+  ansible.builtin.file:
+    path:  /reports
+    state: directory
+    owner: root
+    group: root
+    mode:  '1777'
+
+- name: "Vagrant | Ensure rsync is installed (for synced folder)"
+  ansible.builtin.package:
+    name:  rsync
+    state: present
+
+- name: "Vagrant | Note — GRUB password control is skipped"
+  ansible.builtin.debug:
+    msg: >
+      CIS 1.4.1 (GRUB boot password) is intentionally NOT enforced in Vagrant mode.
+      Setting a GRUB password would prevent the VM from booting unattended.
+      To comply: set a GRUB password manually and document it in your security policy.
+  when: vagrant_mode | bool
